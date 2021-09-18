@@ -2,7 +2,7 @@ const { Socket } = require('socket.io');
 
 require('dotenv').config();
 const app = require('express')();
-const server = require('http').createServer(app);
+const server = require('http').createServer(app)
 const cors = require('cors')
 const io = require('socket.io')(server, {
     cors: {
